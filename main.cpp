@@ -12,7 +12,9 @@ int main(){
         std::cin.ignore();
         std::getline(std::cin, senha);
         intruso.set_senha_vazada(senha);
+        //intruso.organizador();
     }
+    printf("Fim\n");
     std::cout << intruso.crack_senha() <<std::endl;
     
     return 0;
