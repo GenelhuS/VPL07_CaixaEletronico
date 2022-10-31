@@ -8,7 +8,7 @@ class Intruso{
 
     private:
         std::vector <std::string> _senhas;
-        std::map <std::string, std::string> _mapa;
+        std::multimap <std::string, std::string> _mapa;
         std::string _senhacrackeada;
         
     /*Continue a implementação da classe Intruso*/
