@@ -4,9 +4,6 @@
 Intruso::Intruso(){
 };
 
-int Intruso::get_numsenhas(int num_senhas){
-    _numsenhas = num_senhas;
-}
 
 void Intruso::set_senha_vazada(std::string vazou){
     _senhas.push_back(vazou);
