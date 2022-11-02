@@ -1,0 +1,17 @@
+CC := g++
+SRCDIR := src
+BUILDDIR := build
+TARGET := main.out
+CFLAGS := -I include/
+
+all: main
+
+intruso: 
+	$(CC) $(CFLAGS) -c intruso.cpp -o intruso.out 
+
+# Modifique a funcao main
+main: intruso
+	$(CC) $(CFLAGS) *.out main.cpp -o main.out
+
+clean:
+	$(RM) -r $(BUILDDIR)/* $(TARGET)
